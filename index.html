@@ -1,227 +1,50 @@
 <!DOCTYPE html>
- <html>
-  <style>
-.center {
-  padding: 70px 0;
-  border: 3px;
-  text-align: center;
-}
-</style>
+<html>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Humble Abode Cleaning Website!!!</title>
+  <title>Humble Abode Cleaning CSS Website!!!</title>
+  <style>
+.content {
+text-align:center;
+}
+     .floatleft {
+    float:left;
+  }
+      .floatright {
+    float:right;
+  }
+</style>
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
-<body style="background-color:powderblue;"> <!I want to learn how to make everything be in the center of the page rather than in the side or have to add all of these &nbsps which are annoying to see and copy>
-  <div class="center">
+<body style="background-color:powderblue;">
+  <div class="content">
+    <div class="container">
+  <div class="jumbotron">
 <h1>Humble Abode Cleaning </h1>
+    </div> 
   <hr> </>
-  <p> Humble Abode Cleaning is a new cleaning organization that has just established inslef. However, it is just as good as already established cleaning services if not better. It is run by crew members who are diligant and hard working.</p>
-  <h2>Services Offered </h2>
+  <p> Humble Abode Cleaning is a new cleaning organization that has just established itself. However, it is just as good as already established cleaning services if not better. It is run by crew members who are diligant and hard working.</p>
+  <u> <h2>Services Offered </h2> </u>
+ <div class="row">
+   <div class="col-sm-4">Basic UpKeep</div>
+    <div class="col-sm-4">Sparkle Shine</div>
+    <div class="col-sm-4">Cleaning Party</div>
+  </div>
+<br />
    <ol>
-    <li> Basic Upkeep: Regular visits to vacuum, mop and dust. For $50.</li>
- <li>Sparkle Shine: Deep cleaning throughout the house to make your houseshine. For $100</li>
-    <li>Cleaning Party: Cleaning up a messy place after a party or other events. For $150.</li>
+    <li> Basic Upkeep: Includes regular visits to vacuum, mop and dust. For $50.</li>
+ <li>Sparkle Shine: Includes a deep cleaning throughout the house to make your houseshine. For $100</li>
+    <li>Cleaning Party: Includes cleaning up a messy place after a party or other events. For $150.</li>
 </ol>
 <br />
- <img src="https://nextdaycleaning.com/wp-content/uploads/2020/12/Reasons-Why-You-Should-Hire-a-Professional-Cleaning-Service.jpg" "Cleaning" width="300"/>
+ <div class="floatleft"> <img src="https://nextdaycleaning.com/wp-content/uploads/2020/12/Reasons-Why-You-Should-Hire-a-Professional-Cleaning-Service.jpg" "Cleaning" width="300"/>
+  </div>
+ <div class="floatright">  <img src="https://pctclean.com/storage/2022/04/PCT-Deep-Detail-House-Cleaning-Services-v2.jpg" "Cleaning" height="300"/>
+  </div>
 <br /> <br />
-<form method="post" action="process.php">
-  <fieldset>
-<legend> <h2>Request an Estimate with Humble Abode House Cleaning </h2></legend>
-    Full Name: <br />
-    <input type="text" size="30" name="fullname" /><br />
-     Email: <br />
-    <input type="text" size="30" name="email" /><br />
-     Phone Number: <br />
-    <input type="text" size="30" name="phone#" /><br />
-     Address: <br />
-    <input type="text" size="30" name="Address" /><br />
-    <br />
-    What type of cleaning would you like? <br />
-    <input type="checkbox" name="year" value="Basicupkeep" />Basic Upkeep<br />
-    <input type="checkbox" name="year" value="Sparkleshine" />Sparkle Shine<br />
-    <input type="checkbox" name="year" value="cleaningparty" />Cleaning Party<br />
-    <br />
-   If you selected the Basic Upkeep, when would you like us to start?
-    <select name="basicupkeeplistmonths">
-      <option value="select">Select</option>
-      <option value="january">January</option>
-      <option value="febuary">Febuary</option>
-      <option value="march">March</option>
-      <option value="april">April</option>
-      <option value="may">May</option>
-      <option value="june">June</option>
-      <option value="july">July</option>
-      <option value="august">August</option>
-      <option value="septmeber">September</option>
-      <option value="october">October</option>
-      <option value="november">November</option>
-      <option value="december">December</option>
-    </select>
-     <select name="basicupkeeplistdays">
-      <option value="select">Select</option>
-      <option value="1st">1st</option>
-      <option value="2nd">2nd</option>
-      <option value="3rd">3rd</option>
-      <option value="4th">4th</option>
-      <option value="5th">5th</option>
-      <option value="6th">6th</option>
-      <option value="7th">7th</option>
-      <option value="8th">8th</option>
-      <option value="9th">9th</option>
-      <option value="10th">10th</option>
-      <option value="11th">11th</option>
-      <option value="12th">12th</option>
-      <option value="13th">13th</option>
-      <option value="14th">14th</option>
-      <option value="15th">15th</option>
-      <option value="16th">16th</option>
-      <option value="17th">17th</option>
-       <option value="18th">18th</option>
-      <option value="19th">19th</option>
-      <option value="20th">20th</option>
-      <option value="21th">21th</option>
-      <option value="22nd">22nd</option>
-      <option value="23rd">23rd</option>
-      <option value="24th">24th</option>
-      <option value="25th">25th</option>
-      <option value="26th">26th</option>
-      <option value="27th">27th</option>
-      <option value="28th">28th</option>
-      <option value="29th">29th</option>
-      <option value="30th">30th</option>
-       <option value="30th">31st</option>
-       </select>
-     <br /><br />
-    If you selected the Sparkle Shine, when would you like us to start?
-    <select name="sparkleshinelistmonths">
-      <option value="select">Select</option>
-      <option value="january">January</option>
-      <option value="febuary">Febuary</option>
-      <option value="march">March</option>
-      <option value="april">April</option>
-      <option value="may">May</option>
-      <option value="june">June</option>
-      <option value="july">July</option>
-      <option value="august">August</option>
-      <option value="septmeber">September</option>
-      <option value="october">October</option>
-      <option value="november">November</option>
-      <option value="december">December</option>
-    </select>
-     <select name="sparkleshinelistdays">
-      <option value="select">Select</option>
-      <option value="1st">1st</option>
-      <option value="2nd">2nd</option>
-      <option value="3rd">3rd</option>
-      <option value="4th">4th</option>
-      <option value="5th">5th</option>
-      <option value="6th">6th</option>
-      <option value="7th">7th</option>
-      <option value="8th">8th</option>
-      <option value="9th">9th</option>
-      <option value="10th">10th</option>
-      <option value="11th">11th</option>
-      <option value="12th">12th</option>
-      <option value="13th">13th</option>
-      <option value="14th">14th</option>
-      <option value="15th">15th</option>
-      <option value="16th">16th</option>
-      <option value="17th">17th</option>
-       <option value="18th">18th</option>
-      <option value="19th">19th</option>
-      <option value="20th">20th</option>
-      <option value="21th">21th</option>
-      <option value="22nd">22nd</option>
-      <option value="23rd">23rd</option>
-      <option value="24th">24th</option>
-      <option value="25th">25th</option>
-      <option value="26th">26th</option>
-      <option value="27th">27th</option>
-      <option value="28th">28th</option>
-      <option value="29th">29th</option>
-      <option value="30th">30th</option>
-       <option value="30th">31st</option>
-       </select>
-     <br /><br />
-    If you selected the Cleaning Party, what day would you like us to start?
-    <select name="cleaningpartylistmonths">
-      <option value="select">Select</option>
-      <option value="january">January</option>
-      <option value="febuary">Febuary</option>
-      <option value="march">March</option>
-      <option value="april">April</option>
-      <option value="may">May</option>
-      <option value="june">June</option>
-      <option value="july">July</option>
-      <option value="august">August</option>
-      <option value="septmeber">September</option>
-      <option value="october">October</option>
-      <option value="november">November</option>
-      <option value="december">December</option>
-    </select>
-     <select name="Cleaningpartylistdays">
-      <option value="select">Select</option>
-      <option value="1st">1st</option>
-      <option value="2nd">2nd</option>
-      <option value="3rd">3rd</option>
-      <option value="4th">4th</option>
-      <option value="5th">5th</option>
-      <option value="6th">6th</option>
-      <option value="7th">7th</option>
-      <option value="8th">8th</option>
-      <option value="9th">9th</option>
-      <option value="10th">10th</option>
-      <option value="11th">11th</option>
-      <option value="12th">12th</option>
-      <option value="13th">13th</option>
-      <option value="14th">14th</option>
-      <option value="15th">15th</option>
-      <option value="16th">16th</option>
-      <option value="17th">17th</option>
-       <option value="18th">18th</option>
-      <option value="19th">19th</option>
-      <option value="20th">20th</option>
-      <option value="21th">21th</option>
-      <option value="22nd">22nd</option>
-      <option value="23rd">23rd</option>
-      <option value="24th">24th</option>
-      <option value="25th">25th</option>
-      <option value="26th">26th</option>
-      <option value="27th">27th</option>
-      <option value="28th">28th</option>
-      <option value="29th">29th</option>
-      <option value="30th">30th</option>
-       <option value="30th">31st</option>
-       </select>
-     <br /><br />
-  Any other concerns or things that we need to know?:<br />
-  <textarea name="more" rows="8" cols="30">
-  Enter here
-  </textarea>
-</form><br />
-    <br />
-  <input type="submit" value="Click Here to Submit" />
-  </form> 
-<br /> </br>
-<p> If you have any question, comments, or concerns please contact us using the information below.</p> <br /> 
-  <table border="1">
-  <tr>
-    <th colspan="3">Company Contact Information</th>
-  </tr>
-  <tr>
-    <td>Address</td>
-    <td>2503 Vacuum Wy., Pasco, WA</td>
-  </tr>
-  <tr>
-    <td>Phone Number</td>
-    <td>509-555-HAHC</td>
-    </tr>
-     <tr>
-    <td>Email</td>
-    <td><a> href="mailto:contact@yourhousecleaner.home">contact@yourhousecleaner.home</a></td>
-  </tr>
-</table>
-</div>
+  <u> <a href="Request.html"> Request Form</a> </u>
+  </div>
 </body>
 </html>
